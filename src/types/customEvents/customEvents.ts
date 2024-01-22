@@ -1,17 +1,14 @@
 import { ReactNode } from 'react'
 
-import { CommonFormsData } from '@/components/common/AuthModal/types'
-
-export type CustomEventHandler = (event: Event) => void
-
-export interface CommonCustomEventsProps<EventName = keyof CustomEvents> {
-  eventName: EventName
-}
-
 export interface CustomEvents {
   'auth-modal-event': {
     action: 'open' | 'close'
-    data?: CommonFormsData
+    data?: {
+      email?: string
+      initialStep?: 'CustomSteps'
+      redirectUrl?: string
+      redirect?: boolean
+    }
   }
   'example-action': {
     data: {

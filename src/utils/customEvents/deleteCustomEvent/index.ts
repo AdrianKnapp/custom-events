@@ -1,5 +1,5 @@
-import { CustomEvents } from '../types'
-import { DeleteCustomEventProps } from './types'
+import { CustomEvents } from "@/types/customEvents/customEvents"
+import { DeleteCustomEventProps } from "@/types/customEvents/deleteCustomEvent"
 
 export const deleteCustomEvent = <EventName extends keyof CustomEvents>({
   eventName,

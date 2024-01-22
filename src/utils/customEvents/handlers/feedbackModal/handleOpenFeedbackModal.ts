@@ -1,5 +1,5 @@
-import { triggerCustomEvent } from '../../customEvents/triggerCustomEvent'
-import { CustomEvents } from '../../customEvents/types'
+import { CustomEvents } from '@/types/customEvents/customEvents'
+import { triggerCustomEvent } from '../../triggerCustomEvent'
 
 export const handleOpenFeedbackModal = (
   data: CustomEvents['feedback-modal']['data']
