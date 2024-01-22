@@ -19,19 +19,8 @@ export interface CustomEvents {
   }
   'feedback-modal': {
     action: 'open' | 'close'
-    data?: {
-      title?: string
-      description?: ReactNode
-      buttons?: {
-        primary?: {
-          text?: string
-          callback?: () => void
-        }
-        secondary?: {
-          text?: string
-          callback?: () => void
-        }
-      }
+    data: {
+      feedback: string
     }
   }
 }
