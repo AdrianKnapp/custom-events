@@ -1,12 +1,18 @@
 'use client'
 
 import { Button } from '@/components/ui/Button'
-import { handleOpenFeedbackModal } from '@/utils/customEvents/@handlers/feedbackModal/handleOpenFeedbackModal'
+import { triggerCustomEvent } from '@/utils/customEvents/triggerCustomEvent'
 
 export const OpenModalButton = () => {
   const handleOnClick = () => {
-    handleOpenFeedbackModal({
-      feedback: 'This is a feedback message'
+    triggerCustomEvent({
+      eventName: 'feedback-modal',
+      data: {
+        action: 'open',
+        data: {
+          feedback: 'This is a feedback message'
+        }
+      }
     })
   }
 

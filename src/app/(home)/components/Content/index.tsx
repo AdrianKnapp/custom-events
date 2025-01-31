@@ -1,4 +1,4 @@
-import { OpenModalButton } from '../OpenModalButton'
+import { OpenModalButton } from '@/components/common/OpenModalButton'
 
 export const Content = () => {
   return (

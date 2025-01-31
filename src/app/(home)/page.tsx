@@ -1,7 +1,7 @@
-import { Content } from '@/components/common/Content'
 import { FeedbackModal } from '@/components/common/FeedbackModal'
-import { Footer } from '@/components/common/Footer'
-import { Header } from '@/components/common/Header'
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
+import { Content } from './components/Content'
 
 export default function Home() {
   return (

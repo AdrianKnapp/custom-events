@@ -5,5 +5,5 @@ export const createCustomEvent = <EventName extends keyof CustomEvents>({
   eventName,
   handler
 }: CreateCustomEventProps<EventName>) => {
-  document.addEventListener(eventName, handler)
+  document.addEventListener(eventName, handler as EventListener)
 }
