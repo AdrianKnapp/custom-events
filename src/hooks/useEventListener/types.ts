@@ -1,4 +1,4 @@
-import { CustomEvents } from "@/types/customEvents/customEvents"
+import { CustomEvents } from '@/types/customEvents/customEvents'
 
 interface HandlerProp<EventName extends keyof CustomEvents> extends Event {
   detail?: CustomEvents[EventName]

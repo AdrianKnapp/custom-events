@@ -1,4 +1,4 @@
-import { ButtonProps } from "./types";
+import { ButtonProps } from './types'
 
 export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return (
@@ -8,5 +8,5 @@ export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
     >
       {children}
     </button>
-  );
-};
+  )
+}

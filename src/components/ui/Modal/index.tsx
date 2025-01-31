@@ -1,14 +1,10 @@
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment } from "react";
-import { ModalProps } from "./types";
+import { Dialog, Transition } from '@headlessui/react'
+import { Fragment } from 'react'
+import { ModalProps } from './types'
 
 export const Modal = ({ isOpen, setIsOpen, children }: ModalProps) => {
   function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
+    setIsOpen(false)
   }
 
   return (
@@ -45,5 +41,5 @@ export const Modal = ({ isOpen, setIsOpen, children }: ModalProps) => {
         </div>
       </Dialog>
     </Transition>
-  );
-};
+  )
+}
