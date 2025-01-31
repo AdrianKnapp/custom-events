@@ -20,8 +20,9 @@ export const FeedbackModal: React.FC = () => {
 
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-      <h3>This is a feedback modal</h3>
-      <p>Modal</p>
+      <div className="flex flex-col gap-4">
+        <h3 className="text-center">This is a feedback modal</h3>
+      </div>
     </Modal>
   )
 }
