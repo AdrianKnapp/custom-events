@@ -10,7 +10,7 @@ export const Content = () => {
   return (
     <main className="w-full h-[33.33vh] bg-red-100 flex justify-center items-center flex-col gap-2">
       <p>Content</p>
-      <p className="max-w-md text-slate-600">
+      <p className="max-w-md text-slate-600 px-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.{' '}
         <button
