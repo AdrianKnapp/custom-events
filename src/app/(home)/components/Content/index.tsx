@@ -13,7 +13,10 @@ export const Content = () => {
       <p className="max-w-md text-slate-600">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.{' '}
-        <button onClick={handleOpenModal} className="text-blue-600">
+        <button
+          onClick={handleOpenModal}
+          className="text-blue-600 cursor-pointer"
+        >
           Open modal
         </button>{' '}
         ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi

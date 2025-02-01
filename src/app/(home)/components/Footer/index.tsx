@@ -10,7 +10,10 @@ export const Footer = () => {
   return (
     <footer className="w-full h-[33.33vh] bg-green-100 flex justify-center items-center flex-col gap-2">
       <p>Footer</p>
-      <button onClick={handleOpenModal} className="text-blue-600">
+      <button
+        onClick={handleOpenModal}
+        className="text-blue-600 cursor-pointer"
+      >
         More details
       </button>
     </footer>
